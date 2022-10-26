@@ -72,7 +72,7 @@ If you find any bugs please report an issue, so it can be fixed. If you have any
 **We hope this action can be useful for you in someway.**
 
 ## License
-The scripts and documentation in this project are released under the [MIT License](https://github.com/dynolabs/github-pages-react-action/blob/main/LICENSE).
+The scripts and documentation in this project are released under the [MIT License](https://github.com/fcodelabs/react-deploy-github-pages-action/blob/main/LICENSE).
 
 ## Provided by Fcode Labs
 [Fcode Labs](https://fcodelabs.com) - Fastest growing Software Development company based in Sri Lanka & Singapore
