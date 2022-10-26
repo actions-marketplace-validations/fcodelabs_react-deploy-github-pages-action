@@ -1,0 +1,29 @@
+name: 'React Deploy to Github Pages'
+author: 'fcodelabs'
+description: 'Github Action tool to publish your React Application to Github Pages'
+branding:
+  icon: 'upload-cloud'
+  color: 'orange'
+inputs:
+  build_dir:
+    description: 'Build directory to deploy'
+    required: true
+outputs:
+  page_url:
+    description: "The URL of the page"
+    value: ${{ steps.deploy.outputs.page_url }}
+env:
+  GITHUB_TOKEN: "As provided by Github Actions"
+runs:
+  using: composite
+  steps:
+    - name: Upload articats
+      uses: actions/upload-pages-artifact@v1.0.4
+      with:
+        path: ${{ inputs.build_dir }}
+
+    - id: deploy
+      name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v1
+      with:
+        token: ${{ env.GITHUB_TOKEN }}
