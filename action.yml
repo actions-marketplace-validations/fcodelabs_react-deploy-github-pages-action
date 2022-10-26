@@ -1,4 +1,4 @@
-name: 'React Deploy to Github Pages'
+name: 'React Deploy - Github Pages'
 author: 'fcodelabs'
 description: 'Github Action tool to publish your React Application to Github Pages'
 branding:
